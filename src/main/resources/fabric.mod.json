@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "logger_x",
+  "version": "${version}",
+  "name": "Logger X",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/logger-x/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.zly2006.logger_names.LoggerX"
+    ],
+    "preLaunch": [
+      "com.github.zly2006.logger_names.PreLaunch"
+    ]
+  },
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*"
+  }
+}
