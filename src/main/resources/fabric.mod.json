@@ -18,6 +18,6 @@
     ]
   },
   "depends": {
-    "minecraft": "*"
+    "minecraft": ">=1.13"
   }
 }
