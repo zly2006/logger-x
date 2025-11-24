@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[2,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/zly2006/logger-x/issues"
 license = "All Rights Reserved"
 
 [[mods]]
@@ -16,17 +16,13 @@ description = '''
 [[dependencies.loggerx]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21,)"
+versionRange = "[1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.loggerx]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21,)"
+versionRange = "[1.13,)"
 ordering = "NONE"
 side = "BOTH"
-
-
-[[mixins]]
-config = "loggerx.mixins.json"
