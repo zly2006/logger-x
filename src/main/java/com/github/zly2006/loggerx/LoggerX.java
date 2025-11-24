@@ -1,4 +1,4 @@
-package com.github.zly2006.logger_names;
+package com.github.zly2006.loggerx;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;

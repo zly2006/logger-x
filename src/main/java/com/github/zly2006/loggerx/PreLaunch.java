@@ -1,4 +1,4 @@
-package com.github.zly2006.logger_names;
+package com.github.zly2006.loggerx;
 
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import org.apache.logging.log4j.core.config.plugins.util.PluginManager;
