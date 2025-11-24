@@ -1,16 +1,18 @@
 package com.github.zly2006.loggerx.fabric;
 
-import com.github.zly2006.loggerx.Loggerx;
+import com.github.zly2006.loggerx.LoggerX;
+import com.github.zly2006.loggerx.PreLaunchLoad;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 
 public final class LoggerxFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        // This code runs as soon as Minecraft is in a mod-load-ready state.
-        // However, some things (like resources) may still be uninitialized.
-        // Proceed with mild caution.
-
-        // Run our common setup.
-        Loggerx.init();
+        if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
+            LoggerX.LOGGER.info("LoggerX: Development environment detected, skipping reconfiguration.");
+            return;
+        }
+        PreLaunchLoad.load();
+        LoggerX.reconfigure();
     }
 }
